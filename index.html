@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ALOHA28 - Massage & Spa</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: #fffaf6;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(to bottom right, #ffe0b2, #ffcc80);
+      padding: 60px 20px 40px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    header img {
+      max-width: 180px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+    }
+    header h1 {
+      font-size: 3.2em;
+      color: #4e342e;
+      margin: 0;
+    }
+    header p {
+      font-size: 1.3em;
+      color: #6d4c41;
+    }
+    .section {
+      padding: 50px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .about {
+      background: #fff3e0;
+    }
+    .services ul {
+      list-style: none;
+      padding: 0;
+    }
+    .services li {
+      padding: 12px 0;
+      font-size: 1.1em;
+    }
+    .testimonials {
+      background: #fff8e1;
+    }
+    .testimonials p {
+      font-style: italic;
+      padding: 10px;
+      border-left: 4px solid #ffb74d;
+      margin-bottom: 20px;
+    }
+    .contact input,
+    .contact textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      font-size: 1em;
+    }
+    .contact a {
+      color: #8d6e63;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    footer {
+      background: #d7ccc8;
+      text-align: center;
+      padding: 25px;
+      font-size: 0.95em;
+      color: #4e342e;
+    }
+    .button {
+      background: #ff8f00;
+      color: white;
+      padding: 12px 25px;
+      text-decoration: none;
+      border-radius: 25px;
+      font-size: 1em;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+      transition: background 0.3s;
+    }
+    .button:hover {
+      background: #f57c00;
+    }
+    /* Facebook Chat Plugin */
+    #fb-root {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v17.0" nonce="ALOHA28"></script>
+  <div class="fb-customerchat" attribution="setup_tool" page_id="YOUR_FACEBOOK_PAGE_ID"></div>
+
+  <header>
+    <img src="logo.jpg" alt="ALOHA28 Logo">
+    <h1>ALOHA28</h1>
+    <p>Relax. Refresh. Renew. Experience the Best Massage & Spa Services.</p>
+    <a href="#contact" class="button">Book Now</a>
+  </header>
+
+  <section class="section about">
+    <h2>About Us</h2>
+    <p>ALOHA28 is your tropical escape in the heart of the city. Our licensed therapists provide the highest quality massage and spa treatments designed to soothe the body and refresh the spirit.</p>
+  </section>
+
+  <section class="section services">
+    <h2>Our Services</h2>
+    <ul>
+      <li>✔ Swedish Massage</li>
+      <li>✔ Deep Tissue Massage</li>
+      <li>✔ Hot Stone Therapy</li>
+      <li>✔ Facial & Body Treatments</li>
+      <li>✔ Relaxation Spa Packages</li>
+    </ul>
+  </section>
+
+  <section class="section testimonials">
+    <h2>What Our Clients Say</h2>
+    <p>“Absolutely relaxing experience! The ambiance is so calming and the staff are incredibly skilled.” – Maria L.</p>
+    <p>“Highly recommend ALOHA28 for their professionalism and serene environment.” – John D.</p>
+  </section>
+
+  <section class="section contact" id="contact">
+    <h2>Contact Us</h2>
+    <p>Visit us or send a message to book your appointment today!</p>
+    <p>Call us to book an appointment: <a href="tel:+639171234567">+63 917 123 4567</a></p>
+    <form action="https://formspree.io/f/your-form-id" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="4" placeholder="Your Message"></textarea>
+      <button type="submit" class="button">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 ALOHA28 Massage & Spa. All rights reserved.</p>
+    <p>Follow us on Facebook | Instagram | Twitter</p>
+  </footer>
+</body>
+</html>
